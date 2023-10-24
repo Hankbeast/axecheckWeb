@@ -19,7 +19,7 @@ const tableData = ref([
     {checkerName: 'testName', orderNum: '000112', insResults: true}
 ]);
 const columns = ref([
-    {title: '验货员', dataIndex: 'checkerName', key: 'checkerName'},
+    {title: '货物名称', dataIndex: 'checkerName', key: 'checkerName'},
     {title: '订单号', dataIndex: 'orderNum', key: 'orderNum'},
     {title: '验货状态', dataIndex: 'insResults', key: 'insResults'},
     {title: '操作', key: 'operation', fixed: 'right'},
@@ -33,6 +33,6 @@ const toDetails = () => {
 <style lang="less">
 .content {
     background: #fff;
-    padding: 24px;
+    padding: 24px 20%;
 }
 </style>

@@ -20,7 +20,9 @@
                     <a-input-password></a-input-password>
                 </a-form-item>
             </a-form>
-            <a-button class="regBtn" @click="goLogin">Register</a-button>
+            <div style="display: flex;justify-content: center">
+                <a-button class="regBtn" @click="goLogin">Register</a-button>
+            </div>
         </div>
     </div>
 </template>

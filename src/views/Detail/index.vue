@@ -1,5 +1,11 @@
 <template>
     <div class="content">
+        <a-button style="margin-bottom: 20px" @click="goBack">
+            <template #icon>
+                <LeftOutlined />
+            </template>
+            Back
+        </a-button>
         <div class="check-item">
             <div>Inspection Report (1ST 2ND)</div>
             <div>Pre-shipment ON-LINE IN PROCESS FULL</div>
@@ -49,7 +55,15 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
+import {
+  LeftOutlined
+} from '@ant-design/icons-vue';
+const router = useRouter()
 
+const goBack = () => {
+    router.go(-1);
+}
 </script>
 
 <style lang="less">
